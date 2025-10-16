@@ -1,0 +1,434 @@
+# ============================================
+# SHOPA - COMPLETE .GITIGNORE
+# ============================================
+
+# ==========================================
+# ENVIRONMENT & SECRETS
+# ==========================================
+.env
+.env.local
+.env*.local
+.env.development
+.env.production
+.env.test
+*.env
+.envrc
+
+# API Keys and Secrets
+secrets/
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+
+# ==========================================
+# NODE.JS / NPM / YARN / PNPM
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Package manager lock files (uncomment if needed)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# NPM
+.npm
+.npmrc
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ==========================================
+# NEXT.JS (WEB APP)
+# ==========================================
+apps/web/.next/
+apps/web/out/
+apps/web/build/
+apps/web/.swc/
+apps/web/dist/
+
+# Next.js cache
+.next/
+out/
+build/
+
+# Testing
+apps/web/coverage/
+apps/web/.nyc_output/
+
+# ==========================================
+# EXPO / REACT NATIVE (MOBILE APP)
+# ==========================================
+apps/mobile/.expo/
+apps/mobile/.expo-shared/
+apps/mobile/dist/
+apps/mobile/npm-debug.*
+apps/mobile/*.jks
+apps/mobile/*.p8
+apps/mobile/*.p12
+apps/mobile/*.mobileprovision
+apps/mobile/*.orig.*
+apps/mobile/web-build/
+
+# Expo
+.expo/
+.expo-shared/
+expo-env.d.ts
+
+# React Native
+apps/mobile/android/
+apps/mobile/ios/
+*.keystore
+!apps/mobile/android/.gitkeep
+!apps/mobile/ios/.gitkeep
+
+# Metro
+.metro-health-check*
+
+# ==========================================
+# BACKEND API (MULTIPLE LANGUAGES)
+# ==========================================
+
+# Node.js Backend
+apps/api/node_modules/
+apps/api/dist/
+apps/api/build/
+apps/api/uploads/
+apps/api/logs/
+apps/api/*.log
+
+# Python Backend
+apps/api/venv/
+apps/api/env/
+apps/api/.venv/
+apps/api/__pycache__/
+apps/api/*.py[cod]
+apps/api/*$py.class
+apps/api/*.so
+apps/api/.Python
+apps/api/pip-log.txt
+apps/api/pip-delete-this-directory.txt
+apps/api/.pytest_cache/
+apps/api/.coverage
+apps/api/htmlcov/
+apps/api/*.egg-info/
+apps/api/.mypy_cache/
+apps/api/.dmypy.json
+apps/api/dmypy.json
+
+# Django
+apps/api/db.sqlite3
+apps/api/db.sqlite3-journal
+apps/api/media/
+apps/api/staticfiles/
+apps/api/static_root/
+
+# Go Backend
+apps/api/bin/
+apps/api/vendor/
+apps/api/*.exe
+apps/api/*.dll
+apps/api/*.so
+apps/api/*.dylib
+apps/api/*.test
+apps/api/*.out
+apps/api/go.work
+
+# PHP/Laravel Backend
+apps/api/vendor/
+apps/api/storage/
+apps/api/bootstrap/cache/
+apps/api/.phpunit.result.cache
+apps/api/Homestead.json
+apps/api/Homestead.yaml
+
+# Java/Spring Boot
+apps/api/target/
+apps/api/.mvn/
+apps/api/mvnw
+apps/api/mvnw.cmd
+apps/api/.gradle/
+apps/api/build/
+apps/api/gradle/
+apps/api/gradlew
+apps/api/gradlew.bat
+apps/api/*.jar
+apps/api/*.war
+apps/api/*.ear
+apps/api/*.class
+
+# ==========================================
+# DATABASES
+# ==========================================
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+*.dump
+*.log
+
+# PostgreSQL
+*.dump
+*.backup
+
+# MongoDB
+*.bson
+
+# Redis
+dump.rdb
+
+# ==========================================
+# LOGS & DEBUGGING
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Debug files
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ==========================================
+# TESTING & COVERAGE
+# ==========================================
+coverage/
+*.coverage
+.nyc_output/
+.cache/
+test-results/
+junit.xml
+.jest-cache/
+.pytest_cache/
+
+# ==========================================
+# BUILD ARTIFACTS
+# ==========================================
+dist/
+build/
+*.tsbuildinfo
+.turbo/
+
+# ==========================================
+# IDE & EDITOR FILES
+# ==========================================
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# JetBrains (WebStorm, IntelliJ, PyCharm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.*.sw[a-p]
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata
+
+# ==========================================
+# OPERATING SYSTEM FILES
+# ==========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.nfs*
+.directory
+.Trash-*
+
+# ==========================================
+# CLOUD & DEPLOYMENT
+# ==========================================
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# AWS
+.aws/
+*.pem
+
+# Docker
+*.dockerignore
+docker-compose.override.yml
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# ==========================================
+# TEMPORARY & MISC FILES
+# ==========================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.~*
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Media files (if not needed in repo)
+# Uncomment if you don't want to track uploads
+# uploads/
+# media/
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+# *.mp4
+# *.mov
+
+# ==========================================
+# DOCUMENTATION BUILD
+# ==========================================
+docs/_build/
+docs/.docusaurus/
+docs/build/
+site/
+
+# ==========================================
+# MONOREPO SPECIFIC
+# ==========================================
+.turbo/
+.nx/cache/
+.rush/
+
+# ==========================================
+# MISCELLANEOUS
+# ==========================================
+.sass-cache/
+*.css.map
+*.js.map
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Storybook
+storybook-static/
+
+# ==========================================
+# KEEP THESE FILES
+# ==========================================
+!.gitkeep
+!.gitignore
+!.env.example
+!.env.template
